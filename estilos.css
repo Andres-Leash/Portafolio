@@ -1,0 +1,148 @@
+.tech-badge {
+  display: flex;
+  align-items: center;
+  background: #1f1f1f;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tech-icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background: #2c2c2c;
+}
+
+.tech-badge .name {
+  padding: 8px 12px;
+  background: #2c2c2c;
+}
+
+.tech-badge .version {
+  padding: 8px 12px;
+  background: #0d6efd; /* azul bootstrap */
+}
+
+.tech-badge {
+  transition: transform 0.2s;
+}
+
+.tech-badge:hover {
+  transform: scale(1.05);
+}
+
+.devicon-mysql-original {
+  font-size: 20px;
+}
+
+.devicon-django-plain {
+  font-size: 20px;
+}
+
+.perfil-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .perfil-img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.seccion {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bg-pastel-1 { background-color: #fdf6e3; }
+.bg-pastel-2 { background-color: #d1ecf1; }
+
+.btn-linkedin {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn-linkedin:hover {
+  background-color: #084a94;
+  color: white;
+}
+
+.btn-github {
+  background-color: #24292e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn-github:hover {
+  background-color: #000;
+  color: white;
+}
+
+.carrusel-desafio{
+    border: 3px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'%3E%3Cpath d='M11 1L5 8l6 7' stroke='black' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'%3E%3Cpath d='M5 1l6 7-6 7' stroke='black' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+}
+
+.titulo-carrusel{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    background: none;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);  
+    padding: 0;  
+}
+
+.fondo-titulo-carrusel{
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 15px;                 
+    border-radius: 8px;
+    display: inline-block;  
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
